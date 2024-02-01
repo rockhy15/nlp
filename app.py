@@ -50,7 +50,7 @@ def preprocess_text(text):
 
 
 if st.button('Predict'):
-    loaded_model = load(rb"D:/project2/model.sav")
+    loaded_model = load("model.sav")
 
     prediction = loaded_model.predict(df['cleaned_sentence']) 
     
